@@ -1,0 +1,8 @@
+dd= $(date +%d%m%y)
+
+cd /home/apparao_it/
+mkdir $dd_myplex
+cd $dd_myplex/
+mkdir etc opt
+cp -r /etc/myplex etc
+cp -r /opt/myplex opt
