@@ -30,4 +30,6 @@ else
 echo "Memory threshold value has not reached. $(date)"
 fi
 
+##*/2     *       *       *       *       sh /root/cache/cache-clear-script.sh  >> /root/cache/cache-clear-script.log
+
 
