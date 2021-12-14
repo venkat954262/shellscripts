@@ -77,7 +77,7 @@ billjar=`ls -t /DATA/billing/*.jar | head -1 | cut -c 15-`
 sms_pid=`pgrep -f $smsjar`
 #Sms jar checking for Pid if not it will start latest jar
 
-if [ “$?” -eq 0 ]
+if [ $? -eq 0 ]
 then 
   echo "SMS jar is already running (latest-jar: $smsjar, pid: $sms_pid) "
 else
@@ -91,7 +91,7 @@ fi
 #Billing jar checking for Pid if not it will start latest jar
 
 bill_pid=`pgrep -f $billjar`
-if [ “$?” -eq 0 ]
+if [ $? -eq 0 ]
 then 
   echo "bill jar is already running (latest-jar: $billjar, pid: $bill_pid)"
 else
